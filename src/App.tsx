@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import * as C from './App.styles';
 import { Item } from './types/Item';
-import { Category } from './types/Category';
 import { categories } from './data/categories';
 import { items } from './data/items';
 import { getCurrentMonth, FilterListByMonth } from './helpers/dateFilter'
@@ -50,8 +49,9 @@ function App() {
   return (
     <C.Container>
       <C.Header>
-        <C.HeaderText>Sistema Financeiro</C.HeaderText>
+        <C.HeaderText>Expense Tracker</C.HeaderText>
       </C.Header>
+
       <C.Body>
         <InfoArea 
           currentMonth={currentMonth}
@@ -60,7 +60,9 @@ function App() {
           expense={expense}
         />
 
-        <InputArea onAdd={handleAddItem}/>
+        <InputArea 
+          onAdd={handleAddItem} 
+        />
 
         <TableArea list={filtedList}/>
       </C.Body>

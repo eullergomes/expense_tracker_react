@@ -21,7 +21,7 @@ export const TableItem = ({ item }: Props) => {
         
         <C.TableColumn>
           <C.Value color={categories[item.category].expense ? 'red' : 'green'}>
-            R$ {item.value}
+            R$ {item.value.toString().replace('.', ',')}
           </C.Value>
         </C.TableColumn>
     </C.TableLine>

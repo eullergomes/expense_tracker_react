@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div``;
 
-export const Header = styled.div`
+export const Header = styled.header`
   background-color: darkblue;  
   height: 150px;
   text-align: center;
