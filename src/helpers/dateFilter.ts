@@ -1,6 +1,5 @@
 import { Item } from '../types/Item';
 
-
 //Filtragens baseado em data
 
 export const getCurrentMonth = () => {

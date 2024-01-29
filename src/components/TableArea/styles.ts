@@ -12,7 +12,7 @@ export const Table = styled.table`
 
 //prop de largura
 export const TableHeadColumn = styled.th<{ width?: number }>`
-width: ${props => props.width ? `${props.width}px` : 'auto'};  
-padding: 10px 0px;
+  width: ${props => props.width ? `${props.width}px` : 'auto'};  
+  padding: 10px 0px;
   text-align: left;
 `;
